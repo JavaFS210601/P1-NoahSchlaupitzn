@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    h1 {text-align: center;}
+    h4 {text-align: center;}
+</style>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.350);">
+    <h1>Manager page</h1>
+    <br>
+    <h4>Ticket List</h4>
+    <br>
+
+    <div class="container" id="fullcontainer">
+    <!--print all tickets-->
+    <div id="table-row" class="row">
+        <!--Then we need rows inside the container to organize it-->
+            <table id="ticketTable" class="table table-hover table">
+                <thead>
+                    <!--check that i need for table headers-->
+                    <tr>
+                        <th>Id</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketBody">
+                    <!--We're going to leave the table body blank!-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+    <button id="getTicketButton" class="btn btn-info">All Tickets</button>
+    <button class="btn btn-info">Pending</button>
+    <button class="btn btn-info">Denied</button> 
+    <button class="btn btn-info">Approved</button>
+    </div>
+    <!--change status-->
+    <!--update status_id to if ticket id.... something like that-->
+
+    <br>
+    <br>
+    <br>
+    <!--button and input for status update-->
+    <div class="container">
+    <h6>Update Ticket Status</h6>
+    <label><input placeholder="Enter Ticket Id"></label>
+    <button class="btn btn-success">Approve</button>
+    <button class="btn btn-danger">Deny</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!--logout-->
+
+    <div class="container">
+        <button id="logoutButton" class="btn btn-primary">Log Out</button>
+    </div>
+    <br>
+    <br>
+
+    <script src="../js/manager.js"></script>
+</body>
+</html>

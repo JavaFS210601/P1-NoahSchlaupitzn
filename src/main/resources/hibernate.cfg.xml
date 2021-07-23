@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">        
+        
+<hibernate-configuration>
+
+	<session-factory>
+	
+	<!-- JDBC credentials-->
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">Megan!!1</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres?currentSchema=p1"</property>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+	
+	<!-- hibernate properties -->
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.default_schema">p1</property>
+	
+	<!-- hibernate console output -->
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+	
+	<!-- DDL -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- remember, create drops your table at runtime, update will simply update them -->
+	
+	
+	<!-- we'll map our classes here... TBD -->
+	<mapping class="com.revature.models.ersRoles"/>
+	<mapping class="com.revature.models.ersTicket"/>
+	<mapping class="com.revature.models.ersStatus"/>
+	<mapping class="com.revature.models.ersType"/>
+	<mapping class="com.revature.models.ersUsers"/>
+	
+	
+	
+	
+	
+	</session-factory>
+
+</hibernate-configuration>
+
+
+	

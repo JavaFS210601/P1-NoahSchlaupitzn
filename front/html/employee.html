@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    h1 {text-align: center;}
+    h4 {text-align: center;}
+    label {text-align: center;}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.350);">
+    <h1>Employee page</h1>
+    <br>
+    <h4>Ticket List</h4>
+    <br>
+
+    <!--IF TIME/DATE STUFF CAUSES PROBLEMS JUST RIP IT OUT-->
+
+    <div class="container" id="fullcontainer">
+    <!--print all tickets-->
+    <div id="table-row" class="row">
+        <!--Then we need rows inside the container to organize it-->
+            <table id="ticketTable" class="table table-hover table">
+                <thead>
+                    <br>
+                    <!--check that i need for table headers-->
+                    <tr>
+                        <th>Id</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Resolver</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketBody">
+                    <!--We're going to leave the table body blank!-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+    <button id="getTicketButton" class="btn btn-info">lookup tickets</button> 
+    </div>
+</div>
+
+<br>
+<br>
+
+<!--insert a ticket-->
+<div class="container">
+    <h4 class="col-lg-12">Enter a new ticket.</h4>
+    <input id="Amount" type="text" placeholder="Enter ticket amount" class="col-sm-3 form-control center-block">
+    <input id="Type" type="text" placeholder="Enter ticket type" class="col-sm-3 form-control">
+    <input id="Author" type="text" placeholder="Enter your Id" class="col-sm-3 form-control"> 
+    <br>
+    <button id="ticketButton" class="btn btn-info">Create Ticket</button>
+</div>
+
+<!--logout-->
+
+<br>
+<br>
+<br>
+
+<div class="container">
+    <button id="logoutButton" class="btn btn-primary">Log Out</button>
+</div>
+<br>
+<br>
+
+
+    
+    <script src="../js/employee.js"></script>
+</body>
+</html>
